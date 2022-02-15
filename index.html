@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Search US City</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="title">Search US City</h2>
+        <input
+          class="input"
+          type="search"
+          id="search"
+          placeholder="City or State"
+        />
+      </div>
+    </nav>
+
+    <div class="container contents">
+      <p class="result-p"></p>
+
+      <div class="results result-list">
+        <div class="no-data">
+          <h1>US Cities</h1>
+          <p>search by city or state</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-empty">
+      <div class="results result-list">
+        <div class="no-data">
+          <h1>US Cities</h1>
+          <p>search by city or state</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-container hidden"></div>
+    <div class="modal hidden">
+      <div class="title-modal">
+        <span>Loadind..</span>
+
+        <button class="modal-close">x</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-contents">
+          <h2>Loading...</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/js.js"></script>
+  </body>
+</html>
